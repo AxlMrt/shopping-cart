@@ -1,12 +1,12 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <header>
+    <header className="w-screen flex">
       <h1>Logo</h1>
       <nav>
-        <ul>
+        <ul className="flex">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
