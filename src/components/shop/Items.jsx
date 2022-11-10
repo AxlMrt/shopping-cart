@@ -1,7 +1,6 @@
-/* eslint-disable prettier/prettier */
 function Items({ handleCard, card }) {
-  function handleClick(){
-    handleCard(card)
+  function handleClick() {
+    handleCard(card);
   }
 
   return (
@@ -9,7 +8,9 @@ function Items({ handleCard, card }) {
       <h3>{card.name}</h3>
       <p>{card.description}</p>
       <p>{card.price} $</p>
-      <button className='border-2 border-black py-0.5' onClick={handleClick}>Add</button>
+      <button className="border-2 border-black py-0.5" onClick={handleClick}>
+        Add
+      </button>
     </div>
   );
 }
