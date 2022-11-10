@@ -1,20 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Header() {
+function Header({ addItems }) {
   return (
-    <header className="w-screen flex">
+    <header className="header">
       <h1>Logo</h1>
-      <nav>
-        <ul className="flex">
+      <nav className="w-1/2">
+        <ul className="flex justify-around">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/sign-in">Sign-in</NavLink>
+            <NavLink to="/shop">Shop</NavLink>
           </li>
           <li>
-            <NavLink to="/cart">Cart</NavLink>
+            <NavLink to="/cart">Cart {addItems.length}</NavLink>
           </li>
         </ul>
       </nav>
