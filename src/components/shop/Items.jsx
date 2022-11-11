@@ -5,6 +5,7 @@ function Items({ handleCard, card }) {
 
   return (
     <div className="flex flex-col gap-3 border-2 py-3 px-6">
+      <img src={card.url} alt="t-shirt" />
       <h3>{card.name}</h3>
       <p>{card.description}</p>
       <p>{card.price} $</p>

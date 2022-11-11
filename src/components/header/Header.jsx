@@ -14,7 +14,9 @@ function Header({ addItems }) {
             <NavLink to="/shop">Shop</NavLink>
           </li>
           <li>
-            <NavLink to="/cart">Cart {addItems.length}</NavLink>
+            <NavLink to="/cart" className="flex">
+              <img src="./image/icons/cart-outline.png" alt="" /> {addItems.length}
+            </NavLink>
           </li>
         </ul>
       </nav>

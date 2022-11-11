@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Shop from './components/shop/Shop';
 import Cart from './components/cart/Cart';
-import data from './components/shop/data';
+import data from './components/data/itemData';
 
 function App() {
   const [addItems, setAddItems] = React.useState([]);

@@ -8,6 +8,23 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    border-bottom: 2px solid black
+    border-bottom: 2px solid black;
+  }
+
+  .arrow {
+    width: 3rem;
+    height: 3rem;
+    background: #fff7f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 2;
   }
 }
