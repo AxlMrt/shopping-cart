@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import Items from './Items';
 
-function Shop({ handleCard, product }) {
+function Product({ handleCard, product }) {
   return (
     <div className="grid grid-cols-3 p-8 gap-3">
       {
@@ -17,4 +17,4 @@ function Shop({ handleCard, product }) {
   );
 }
 
-export default Shop;
+export default Product;

@@ -1,22 +1,23 @@
 /* eslint-disable prettier/prettier */
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
 import { mdiArrowLeft } from '@mdi/js';
 import { mdiArrowRight } from '@mdi/js';
 import Icon from '@mdi/react';
 import data from '../data/heroData';
+import HeroItem from './HeroItem';
 
-function Home() {
+function Hero() {
   const [slideIndex, setSlideIndex] = React.useState(0);
   function handleClick(direction) {
     if (direction === 'left') setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
-    setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+    if (direction === 'right') setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+
   }
 
   const style = {
-    // eslint-disable-next-line quotes
     transform: `translateX(${slideIndex * -100}vw)`,
+    transition: 'all 1.5s ease',
   }
 
   return (
@@ -28,16 +29,7 @@ function Home() {
         {
           data.map((hero, idx) => (
             <div key={idx} className={`flex items-center w-screen h-screen ${hero.bg}`}>
-              <div className="flex-1 h-full">
-                <img src={hero.img} className="h-4/5" />
-              </div>
-              <div className="flex-1 p-12">
-                <h1 className="text-7xl">{hero.title}</h1>
-                <p className="my-12 text-xl font-medium tracking-wide">{hero.desc}</p>
-                <NavLink to="/shop" className="text-xs p-2.5 border-2 border-stone-400 cursor-pointer">
-                  SHOP NOW
-                </NavLink>
-              </div>
+              <HeroItem hero={hero} />
             </div>
           ))
         }
@@ -49,4 +41,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Hero;

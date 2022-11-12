@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 export default [
   {
-    url: './image/products/tshirt1.jpg',
+    url: './image/products/item1.png',
     name: 'dolor sit ',
     description:
       'Aliquam vel nisi non tortor tempor viverra quis ultrices tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse lorem risus, mollis id est ut, facilisis hendrerit dui.',
@@ -9,7 +9,7 @@ export default [
     id: nanoid()
   },
   {
-    url: './image/products/tshirt2.jpg',
+    url: './image/products/item2.png',
     name: 'adipiscing elit',
     description:
       'Pellentesque vel ipsum sit amet odio luctus condimentum nec eu lorem. Donec nec quam lacinia, pulvinar orci eget, posuere ipsum. Sed vel magna leo. ',
@@ -17,7 +17,7 @@ export default [
     id: nanoid()
   },
   {
-    url: './image/products/tshirt3.jpg',
+    url: './image/products/item3.png',
     name: 'Fusce vehicula',
     description:
       'Duis eleifend vestibulum urna maximus faucibus. Integer quis quam at nisi commodo aliquet vel sit amet sapien. Sed malesuada maximus ex, non venenatis dui suscipit sed.',
@@ -25,7 +25,7 @@ export default [
     id: nanoid()
   },
   {
-    url: './image/products/tshirt4.jpg',
+    url: './image/products/item4.png',
     name: 'sit amet',
     description:
       'Morbi id lectus interdum, bibendum sem sodales, bibendum nulla. Vestibulum facilisis erat in dui dignissim sagittis. Nunc quam felis, vestibulum a feugiat id, pretium blandit mi. ',
@@ -33,7 +33,7 @@ export default [
     id: nanoid()
   },
   {
-    url: './image/products/tshirt5.jpg',
+    url: './image/products/item5.png',
     name: 'Lorem ipsum',
     description:
       'Pellentesque condimentum dictum metus, ac tristique libero tristique ut. Nunc laoreet neque in porta pharetra. Donec sed eros blandit, imperdiet odio fermentum, viverra turpis.',

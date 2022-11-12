@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --stone: #a8a29e;
+}
+
 @layer components{
   .header {
     width: 100%;
@@ -26,5 +30,52 @@
     cursor: pointer;
     opacity: 0.5;
     z-index: 2;
+  }
+
+  /* text-xs p-2.5 border-2 border-stone-400 cursor-pointer */
+
+  .button {
+    font-size: .75rem;
+    text-transform: uppercase;
+    padding: .625rem;
+    border: 2px solid var(--stone);
+    cursor: pointer;
+  }
+
+  .itemContainer {
+    flex: 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5fbfd;
+    position: relative;
+    margin: 0.3rem;
+    min-width: 17.5rem;
+    height: 22rem;
+  }
+
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: white;
+    padding: .5rem;
+    margin: 10px;
+    transition: all .5s ease;
+    cursor: pointer;
+  }
+
+  .icon:hover{
+    background: #e9f5f5;
+    transform: scale(1.1);
+  }
+
+  .footer-list {
+    width: 50%;
+    margin-bottom: .8rem;
+    cursor: pointer;
   }
 }

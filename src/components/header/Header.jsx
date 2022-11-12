@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Icon from '@mdi/react';
+import { mdiCartOutline } from '@mdi/js';
 
 function Header({ addItems }) {
   return (
@@ -15,7 +17,7 @@ function Header({ addItems }) {
           </li>
           <li>
             <NavLink to="/cart" className="flex">
-              <img src="./image/icons/cart-outline.png" alt="" /> {addItems.length}
+              <Icon path={mdiCartOutline} size={1} /> {addItems.length}
             </NavLink>
           </li>
         </ul>
