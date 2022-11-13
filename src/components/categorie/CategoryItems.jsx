@@ -7,7 +7,7 @@ function CategoryItems({ item }) {
       <img src={item.img} className="w-full h-screen object-cover" />
       <div className="absolute w-full h-full top-0 bottom-0 flex flex-col items-center justify-center">
         <h1 className="text-white text-4xl mb-5">{item.title}</h1>
-        <NavLink to="/" className="button border-none bg-white">
+        <NavLink to="/shop" className="button border-none bg-white">
           Shop Now
         </NavLink>
       </div>

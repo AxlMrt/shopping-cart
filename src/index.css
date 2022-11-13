@@ -78,4 +78,10 @@
     margin-bottom: .8rem;
     cursor: pointer;
   }
+
+  .shop-item-container > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 }
